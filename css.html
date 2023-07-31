@@ -1,5 +1,5 @@
 body{
-    background-color: greenyellow;
+    background-color: rosybrown;
 }
 
 h1{ 
@@ -17,7 +17,7 @@ p{
    border-style:outset;
 }
 
-p2{
+.p2{
     color: white;
     font-family: sans-serif;
     font-style: italic;
@@ -103,6 +103,7 @@ p2{
 
 .buscar{
     margin-top: 5px;
+    display: none;
 }
 
 .log-in{
@@ -137,7 +138,7 @@ button:active{
 }
 
 *{
-    padding: 0;
+    padding:0;
     margin: 0;
     text-decoration: none;
     list-style: none;
@@ -148,6 +149,9 @@ nav{
     background: #2fcdcd;
     height: 80px;
     width: 100%;
+    margin-top: 10px;
+    display: fixed;
+
 }
 
 .enlace{
@@ -183,6 +187,7 @@ nav ul li a{
 li a.active, li a:hover{
     background: #000090;
     transition: .2s;
+    border-radius: 20px 20px;
     }
 
 .checkbtn{
@@ -242,3 +247,34 @@ li a.hover, li a.active{
 }
 
 }
+
+web-link{
+    display: none;
+}
+
+.resolucion{
+    width: 99%;
+    text-align: center;
+}
+
+/**Movil**/
+@media (max-width: 767px){
+.desktop{display: none;}
+
+.tablet{display: none;}
+}
+
+/**Tablet**/
+@media (min-width: 768px) and (max-width: 990px){
+    .desktop{display: none;}
+    
+    .movil{display: none;}
+}
+
+/**Escritorio**/
+@media (min-width: 991px){
+.tablet{display: none;}
+
+.movil{display: none;}
+}
+
