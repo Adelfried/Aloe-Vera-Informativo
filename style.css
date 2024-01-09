@@ -31,10 +31,10 @@ header{
     rgb(60, 255, 0),
     #2a8526);
     position: fixed;
-    width: 100cqb;
+    width: 100%;
     border-radius: 7px 10px;
     padding-top: 10px;
-    min-width:100% ;
+
     justify-content: space-evenly;
     align-items: center;
 }
@@ -65,10 +65,10 @@ nav a:hover{
 }
 
 .img1{
-    max-width: 15%;
     margin-top: 60px;
-    border-radius: 10px ;
+    border-radius: 10px 10px 10px 10px ;
     padding-top: 40px;
+    width: 80px;
 
 }
 
