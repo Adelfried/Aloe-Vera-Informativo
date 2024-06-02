@@ -1,77 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-     
     <https://github.com/Adelfried/Aloe-Vera.git>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Les brindaremos informarmacion sobre la planta aloe vera.">
-    <link rel="icon" href="Aloe Vera.icon">
-    <title>Aloe Vera (Informativo)</title>
+    <title>Manzana</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Lora:ital@1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        .parrafo-content {
+            opacity: 0;
+            transform: translateX(-100%);
+            transition: all 1s ease;
+        }
+        .parrafo-content.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
 </head>
 <body>
     <header>
-        <a href="#" class="Logo">
-           <center> <h2 class="titulo" title="Pagina de inicio">Aloe Vera "INFO"</h2> </center>
-        </a>
-        <nav>
-            <a href="#inicio" class="primer-button">Inicio</a>
-            <a href="#Beneficios" class="segundo-button" >Beneficios</a>
-            <a href="#contacto" class="tercer-button">Contacto</a>
+        <section id="Definicion"></section>
+        <nav class="all-navbar">
+            <ul class="nav-bar">
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="#Definicion">Definicion</a></li>
+                    <li><a href="#Propiedades">Propiedades</a></li>
+                    <li><a href="#Historia">Historia</a></li>
+
+                    <label for="check" class="close-menu"><i class="fas fa-times" style="color: black;"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars" style="color: rgb(70, 105, 93);"></i></label>
+            </ul>
         </nav>
     </header>
-    <section id="inicio">
-     <center><img src="Aloe Vera.jpg" alt="img parrafo 1" class="img1"></center>
 
-     <center><h1 class="tema1">¿Que es Aloe Vera?</h1></center>
-    <center><p class="p1"><h3>Aloe vera, llamado sábila entre otros, es una especie suculenta de la familia Asphodelaceae. Con unas quinientas (500) especies, el aloe está ampliamente distribuido y se considera una especie invasora en muchas regiones del mundo.1​2​
+    <div class="firts-section">
+        <h1 class="number-one">1</h1>
+    </div>
 
-        Es una planta de hoja perenne, probablemente se originó en la Península Arábica, pero crece de forma silvestre en climas tropicales, semitropicales y áridos de todo el mundo.1​ Se cultiva para productos comerciales, principalmente como tratamiento tópico utilizado durante siglos.1​2​ La especie es atractiva con fines decorativos y tiene éxito en interiores como planta de maceta3​
-         
-        Se utiliza en muchos productos de consumo, incluidas bebidas, lociones para la piel, cosméticos, ungüentos o en forma de gel para quemaduras menores y quemaduras solares. Hay poca evidencia clínica de la efectividad o seguridad del extracto de Aloe vera como fármaco cosmético o tópico.2​4​
-        
-        Se debe colocar en el exterior donde le dé la luz del sol.</h3></p></center>
-     </section>
-     <section id="Beneficios"> 
-        <center><h3><p class="p2">Arbusto acaule o con tallo corto de hasta 30 cm, erecto, sin rebrotes laterales. Las hojas, que pueden medir hasta 40-50 cm de largo por 10-15 cm de ancho en ejemplares adultos, se disponen en forma de roseta basal. Son estrechamente triangular-lanceoladas, canaliculadas, rectas, erecto-patentes, herbáceas, de un verde-grisáceo, glaucas, ligeramente recubiertas de pruina y sin manchas —excepto unas motas alargadas y claras en los hijuelos y en la base de algunas hojas más viejas—, dentadas solo en el margen, con dientes de unos 2 mm, gruesos, duros, retrorsos, de un color más claro que el del limbo.</p></h3></center>
+    <img src="manzana-image-removebg-preview (1).png" alt="" title="Manzana" class="img1">
+    <div class="primer-info-tarjeta">
+        <h2 class="que-es-la-manzana">¿𝑸𝒖é 𝑬𝒔 𝑳𝒂 𝑴𝒂𝒏𝒛𝒂𝒏𝒂?</h2>
+        <h3>La manzana es aquella fruta comestible que se recolecta de un árbol frutal usualmente denominado manzano, el cual forma parte de la familia de las Rosáceas y a la especie Malus domestica. Es una fruta pomácea de una forma casi esférica, ya que es deprimido en la parte superior y en la base, cuya piel es de color verde, amarilla o de color rojo, y de un sabor practicamente dulce, aunque esto generalmente depende de la variedad del fruto.</h3>
+        <h2 class="emoji">🍎</h2>
+        <h3>Al igual que la mayoría de frutas, el componente principal es el agua, en un 85%. El componente principal de la manzana es el agua, ya que se encuentra en un 85% aproximadamente. Posee altas cantidades de fibra, potasio, ácido fólico, calcio, vitaminas A, C y del complejo vitamínico B.</h3>
+    </div>
 
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5305597555717528"
-        crossorigin="anonymous"></script>
-   <!-- Anunciocua -->
-   <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-5305597555717528"
-        data-ad-slot="5761633886"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-   <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-   </script>
-        
-        <center><h1 class="tema2">"Beneficios para la piel"</center>
-        <center><img src="aloe vera beneficios.jpg" alt="aloe vera beneficios" class="img2"></center>
-
-        <center><h3><p class="p3">La aloe vera, conocido también como sábila, es una planta muy preciada y usada en belleza debido a la gran cantidad de propiedades que ofrece para cuidar la piel y mejorar su apariencia. Astringente, hidratante, regenerante, renovador, rejuvenecedor, antibacteriano... estos son algunos de los mayores poderes del aloe vera de los que podemos beneficiarnos para lucir una piel revitalizada e impecable. Si deseas conocer con más detalle cuáles son los beneficios del aloe vera para la piel, sigue leyendo este artículo de un Como. </p> </h3></center>
-    
-    <p class="beneficios"><h2>1. Constituye un aliado magnífico que calma y refresca la piel tras una exposición solar.</h3></p>
+        <div class="vitaminas">
+            <section id="Propiedades">
+            <img src="vitaminas.jpg" alt="" class="imagen-vitaminas">
+        </div>
+        <h2>
+            <p class="sus">sus</p>
+            <p class="propiedades">Propiedades</p>
+            <p class="vitaminas-parrafo">
+                💡La manzana posee una fuente discreta de Vitamina E o tocoferol, la cual aporta una acción antioxidante, interviniendo en la estabilidad de las células sanguíneas como los glóbulos rojos y en la fertilidad, y posee una escasa cantidad de Vitamina C. Del mismo modo, se pueden encontrar complejos vitamínicos del grupo B como la B1, B2 y B6.
+            </p>
+        </h2>
+        <div class="number2-container">
+            <h1 class="number-section2">2</h1>
+        </div>
     </section>
-    <p class="beneficios"><h2>2. Alivia también las picaduras de insectos y ayuda a reducir las cicatrices y el acné.</h3></p>
-  a disimula las estrías.</p></h3>
-    <h2> <p class="beneficios">4. El aloe acelera la producción de nuevas células, por lo que está considerado un magnífico regenerador cutáneo.</p></h3>
-    <h2> <p class="beneficios">5. Estimula la síntesis del colágeno y de la elastina   
-    <h2> <p class="beneficios">3. Mejora los eccemas y la psoriasis, y si se usa de forma continuad, de modo que usado con regularidad ralentiza la aparición de arrugas.</p></h3>
-    <h2> <p class="beneficios">6. Por otra parte, sus mucílagos poseen gran capacidad para retener agua. Por ello el aloe es eficaz en el tratamiento de pieles deshidratadas y desvitalizadas.</p></h3>
-    <h2> <p class="beneficios">7. Además, equilibra la dermis después de la depilación y el afeitado, nutre el cabello, contribuye a eliminar la caspa y se utiliza como fijador y acondicionador, ya que aporta suavidad, fortaleza y flexibilidad al pelo.</p></h3>
-    
-        <section id="contacto">
-            <footer>
-        
-       <center class="numero"><h2>contacto 1+ (849-360-8247)</h2></center>
-       <center class="nombre"><h3>(Adelfried T.V)</h3></center>
-       <p class="exp"><h4>experience in "HTML" and "CSS"</h4></p>
-       <h5> in progress of more experience</h5>
-            </footer>
-        </section>
+
+    <section id="Historia">
+        <div class="parrafo-content">
+            <div class="number3-container">
+                <h1 class="number-section3">3</h1>
+            </div>
+            <h2 class="su">su</h2>
+            <h1 class="Historia">Historia</h1>
+            <img src="Historia de la manzana.jpg" alt="" title="Manzano" class="Manzano">
+            <p>
+            <h2 class="palabras-del-parrafo-tres">
+                Los manzanos son originarios de Asia Central, específicamente de los bosques de la cordillera Tian Shan, en la frontera entre las actuales China, Kazajistán y Kirguistán. Una tradición túrquica dice que la manzana proviene de la zona de Almá-Atá o Almatý, antigua capital de Kazajistán, cuyo nombre es la forma adjetivada del sustantivo «manzana» en kazajo.
+            </h2>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+<h3 class="creacion">Esta pagina fue creada para fines de aprendisaje propio y del lector por supuesto.</h3>
+
+    <h4 class="aloe-vera">Eh creado un informativo sobre Aloe vera, si desea entrar  tambien</h4> <a href="https://adelfried.github.io/Aloe-Vera-Informativo/" style="text-decoration: none;" class="entra-aqui">Entra aqui</a>
+    </footer>
 
 </body>
+
+<script>
+    window.addEventListener('click', function(event) {
+        var checkbox = document.getElementById('check');
+        var menu = document.querySelector('.nav-bar');
+        if (!menu.contains(event.target) && checkbox.checked) {
+            checkbox.checked = false;
+        }
+    });
+
+    document.querySelectorAll('.nav-bar .menu li').forEach(function(li) {
+        li.addEventListener('click', function() {
+            var checkbox = document.getElementById('check');
+            checkbox.checked = false;
+        });
+    });
+
+    window.addEventListener('scroll', function() {
+        var parrafoContent = document.querySelector('.parrafo-content');
+        var rect = parrafoContent.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            parrafoContent.classList.add('visible');
+        }
+        
+    });
+</script>
+</html>
