@@ -186,9 +186,10 @@ body {
 
 .img1{
     position: relative;
-    left:3px;
+    left:5px;
     display: flex; 
     top: -80px;
+    z-index: 1003;
 }
 
 .firts-section{
@@ -199,8 +200,9 @@ body {
     background-color: #4aaf10;
     padding: 7px;
     width: 45px;
-    border-radius:0 0 20px 0 ;
-    position: sticky;
+    top: 50px;
+    border-radius: 10px 0 20px 0 ;
+    
 }
 
 .number-one{
@@ -305,7 +307,7 @@ html{
 .number-section3{
     position: relative;
     display: flex;
-    z-index: 2;
+    z-index: 4;
     border: 2px inset black;
     background-color: #4aaf10;
     padding: 8px;
@@ -373,6 +375,7 @@ font-size: 33px;
 
 footer{
     padding: 30px;
+    height: 80px;
     background:  linear-gradient(
         180deg,
         rgb(222, 235, 225)50%,
@@ -410,15 +413,62 @@ footer{
     top: -20px;
 }
 
-/* Ahora el lado responsive */
+/* Ahora el lado Media Queries */
 
 @media (min-width: 611px)  {
     .nav-bar{
-        left: 0px;
-        width: 100%;
-        height: 50px;
+      display: none;
+
+    }
+    .nav-pc{
         display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        background-color: #95e4e0;
+        border-radius: 0 0 10px 10px ;
+        height:50px;
+        border:3px solid #49807d ;
+        width: 100vw;
+        top: 0px;
+        z-index: 1001;
+        position: fixed;
+        
+    }
+    .liss{
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(10, 10, 9);
+        text-align: center;
+        transition: 0.15s ease-in-out;
         position: relative;
+        text-transform: uppercase;
+        z-index: 100;
+        font-size: 17px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-weight: 600;
+        font-family:sans-serif;
+        top: -px;
+        
+    }
+    .liss::after{
+        content: "";
+        width: 0;
+        height: 0;
+        background-color: #2dc07c;
+        position: absolute;
+        transition: ease .5s;
+
+    }
+    .liss:hover::after{
+        width: 100%;
+        height: 5px;
+        border-radius: 5px;
+        top: 20px;
+        left: 0px;
     }
     .menu li a {
         display: flex;
@@ -427,8 +477,7 @@ footer{
         align-items: center;
         margin-left: 40px;
         display: block;
-        
-        
+        font-size: 18px;
     }
     .menu li a:hover:after {width: 100%;}
     .open-menu , .close-menu {
@@ -440,5 +489,26 @@ footer{
     }
     .open-menu{
         display: none;
+    }
+    
+}
+
+
+@media(max-width: 610px){
+    .nav-pc{
+        display: none;
+    }
+    .liss{
+        display: none;
+    }
+    .nav-bar{
+        top: 0px;
+    }
+    .number-one{
+        top: 0;
+    }
+    body{
+        max-height: 100vh;
+        margin-top: -40px;
     }
 }
