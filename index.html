@@ -22,6 +22,16 @@
             transform: translateX(0);
         }
 
+        .parrafo-content {
+            opacity: 0;
+            transform: translateX(-100%);
+            transition: all 1s ease;
+        }
+        .parrafo-content.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
         :root{
     overflow-x: hidden;
 }
@@ -536,7 +546,7 @@ footer{
         margin-top: -40px;
     }
 }
-        
+     
     </style>
 </head>
 <body>
