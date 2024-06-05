@@ -31,8 +31,7 @@
             opacity: 1;
             transform: translateX(0);
         }
-
-        :root{
+:root{
     overflow-x: hidden;
 }
 
@@ -47,7 +46,7 @@
 html{
     scroll-behavior: smooth;
 }
-
+body { --scrollbar-width: 14px; --scrollbar-height: 10px; --scrollbar-border-radius: 20px; --scrollbar-border-thickness: 3px; --show-double-buttons: none; --scrollbar-button-color: #03A9F4B3; --scrollbar-corner-color: #E91E63F2; width: 361px; height: 294px; --scrollbar-thumb-color: #009688BF; --scrollbar-track-color: #8BC34AD9; --scrollbar-border-color: #333B33CC; } body::-webkit-scrollbar-button { background: var(--scrollbar-button-color, #3F3F46); border: var(--scrollbar-border-thickness, 3px) solid var(--scrollbar-border-color, rgb(255, 255, 255)); border-radius: var(--scrollbar-border-radius, 4px); }body::-webkit-scrollbar { width: var(--scrollbar-width, 20px); height: var(--scrollbar-height, 20px); }body::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb-color, #3B82F6); border: var(--scrollbar-border-thickness, 3px) solid var(--scrollbar-border-color, rgb(255, 255, 255)); border-radius: var(--scrollbar-border-radius, 4px); }body::-webkit-scrollbar-track { background: var(--scrollbar-track-color, #A1A1AA); }body::-webkit-scrollbar-corner { background: var(--scrollbar-corner-color, #FFFFFF); border: var(--scrollbar-border-thickness, 3px) solid var(--scrollbar-border-color, rgb(255, 255, 255)); border-radius: var(--scrollbar-border-radius, 4px); }body::-webkit-scrollbar-button:vertical:start:increment, #preview::-webkit-scrollbar-button:vertical:end:decrement, #preview::-webkit-scrollbar-button:horizontal:start:increment, #preview::-webkit-scrollbar-button:horizontal:end:decrement { display: var(--show-double-buttons, none); }
 body {
     font-family: "Poppins", sans-serif;
     --color1: #fff;
@@ -58,7 +57,8 @@ body {
         rgba(109, 40, 23, 0.966)90%
     );
     background-repeat: no-repeat;
-    height: 720px;
+    height: 100%;
+    width: 100vw;
 }
 /*Todo del header,menu,close menu,responsive*/
 
@@ -192,6 +192,8 @@ body {
     text-align: center;
     font-style:oblique;
     overflow: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .primer-info-tarjeta > .que-es-la-manzana{
@@ -201,6 +203,7 @@ body {
     color: rgba(77, 74, 66, 0.651);
     position: relative;
     font-style: italic;
+    margin-top: 80px;
 }
 
 .emoji{
@@ -454,6 +457,25 @@ footer{
       display: none;
 
     }
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    .primer-info-tarjeta{
+        width: 75vw;
+        height: 85vh;
+        top: -10px;
+        position: relative;
+    }
+    .que-es-la-manzana{
+        top: 10px;
+        position: relative;
+        display: flex;
+    }
+    .img1{
+        position: relative;
+        height: 180px;
+    }
     .nav-pc{
         display: flex;
         justify-content: center;
@@ -485,7 +507,7 @@ footer{
         align-items: flex-end;
         font-weight: 600;
         font-family:sans-serif;
-        top: -px;
+        top: 0px;
         
     }
     .liss::after{
@@ -524,6 +546,26 @@ footer{
     .open-menu{
         display: none;
     }
+    /* todo section 2 */
+    .all-content2{
+        width: 100vw;
+        
+        
+    }
+    .imagen-vitaminas{
+    width: 100vw;
+    }
+    /* Todo section 3 */
+    .number-section3{
+        position: relative;
+        display:flex;
+        left: -280px;
+    }
+    .parrafo-content{
+        width: 100vw;
+        height: 100vh;
+    }
+
     
 }
 
@@ -543,10 +585,29 @@ footer{
     }
     body{
         max-height: 100vh;
-        margin-top: -40px;
+        max-width: 100vw;
+    }
+    .firts-section{
+        top: 0;
+    }
+    .primer-info-tarjeta{
+        height:580px;
+        top: -17px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .que-es-la-manzana{
+        top: 10px;
+        left: 25px;
+    }
+    .img1{
+        left:40px;
+
+        height: 150px;
     }
 }
-     
     </style>
 </head>
 <body>
